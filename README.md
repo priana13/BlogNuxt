@@ -73,3 +73,10 @@ bun run preview
 ```
 
 Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+
+
+Tempat Belajar : 
+https://www.youtube.com/watch?v=tGhMaMIYRiI&list=PL4cUxeGkcC9haQlqdCQyYmL_27TesCGPC&index=8
+
+Link: 
+[Dummy APi ](https://fakestoreapi.com/)
