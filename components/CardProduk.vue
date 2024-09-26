@@ -5,9 +5,10 @@
         <span class="absolute top-0 left-0 m-2 rounded-full bg-black px-2 text-center text-sm font-medium text-white">39% OFF</span>
     </a>
     <div class="mt-4 px-5 pb-5">
-        <a href="#">
-        <h5 class="text-xl tracking-tight text-slate-900">{{ product.title }}</h5>
-        </a>
+        <NuxtLink :to="`products/${product.id}`" >       
+            <h5 class="text-xl tracking-tight text-slate-900">#{{product.id}} {{ product.title }}</h5>
+        </NuxtLink>        
+
         <div class="mt-2 mb-5 flex items-center justify-between">
         <p>
             <span class="text-3xl font-bold text-slate-900">${{ product.price }}</span>           
