@@ -23,6 +23,10 @@
 
   const {data:products} = await useFetch('https://fakestoreapi.com/products')
    
+   useHead({
+    title: "Toko Online - List Produk"
+   })
+
 </script>
 
 <style lang="scss" scoped>
