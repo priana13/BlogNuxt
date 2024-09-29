@@ -8,14 +8,8 @@
 
         <div  v-for="p in products">        
 
-            <div class="p-2 shadow">
-                <!-- <img src="{{ p.image }}" alt=""> -->
-                <h2 class="my-2 font-bold"> <span>#{{ p.id }}</span> {{ p.title }}k</h2>
-                <p class="mb-2">{{ p.category }}</p>
-                <NuxtLink :to="`/products/${p.id}`" class="bg-green-600 px-4 py-1 rounded-lg text-white"> Add To Cart </NuxtLink>
-                
+            <CardProduk :product="p" />
 
-            </div> 
         </div>      
             
 
@@ -29,6 +23,10 @@
 
   const {data:products} = await useFetch('https://fakestoreapi.com/products')
    
+   useHead({
+    title: "Toko Online - List Produk"
+   })
+
 </script>
 
 <style lang="scss" scoped>
